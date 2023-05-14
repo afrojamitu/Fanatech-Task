@@ -1,0 +1,52 @@
+.city-bg {
+    background-image: url('https://i.ibb.co/LNKXnJf/image-2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    animation: moveBackground 10s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .city-bg {
+      height: 50vh;
+      animation: none;
+    }
+  }
+
+
+.bicycle-img {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    animation: moveBicycle 3s linear infinite;
+  }
+  
+  @keyframes moveBicycle {
+    0% {
+      transform: translateX(-150px);
+    }
+    100% {
+      transform: translateX(150px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .bicycle-img {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        right: 10%;
+        transform: translateX(50%);
+    }
+  }

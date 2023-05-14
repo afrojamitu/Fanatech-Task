@@ -1,0 +1,15 @@
+.banner-leaf-bg{
+    background-image: url('../assets/images/leaf-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-leaf-bg {
+        height: auto;
+        background-size: contain;
+        background-position: top;
+    }
+}
